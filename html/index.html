@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hand Gesture Detection</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        /* Main container styling */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        #cimg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .aside {
+            flex: 1;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .aside {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Hand Gesture Detection</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img id="cimg" src="" alt="">
+        <div class="aside">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero justo. Sed eu lectus eu mi venenatis
+                suscipit. Fusce facilisis orci eu nunc feugiat, vel vulputate ligula laoreet. Integer et nisi id neque
+                sollicitudin volutpat. Donec efficitur risus id euismod interdum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

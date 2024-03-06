@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #009688;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #004d40;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .container {
+            border: 2px solid #009688;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h1, h2 {
+            color: #009688;
+        }
+
+        .about-content {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+        }
+
+        
+
+        .nav-links i {
+            margin-right: 5px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #009688;
+                width: 100%;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="#">Sign Language to Text</a>
+        </div>
+        <ul class="nav-links">
+            
+            <li><i class="fas fa-info-circle"></i><a href="about">About</a></li>
+            <li><i class="fas fa-cogs"></i><a href="services">Services</a></li>
+            <li><i class="fas fa-envelope"></i><a href="contact">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <h1>About Us</h1>
+
+        <div class="about-content">
+            <p>Welcome to Sign Language to Text Conversion – your premier platform for bridging communication gaps between the hearing-impaired community and the rest of the world. Our mission is to make information accessible to everyone, regardless of their ability to hear or speak.</p>
+        </div>
+
+        <div class="about-content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower individuals with hearing impairments by providing a cutting-edge solution that converts sign language gestures into written text and spoken language. We believe in fostering inclusivity and breaking down barriers to communication.</p>
+        </div>
+
+        <div class="about-content">
+            <h2>Meet Our Team</h2>
+            <p>We have a dedicated team of professionals passionate about accessibility and technology. Together, we work tirelessly to develop and improve our sign language to text conversion platform to make a positive impact on the lives of those with hearing impairments.</p>
+        </div>
+
+        <!-- Add more about content as needed -->
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>
+
+

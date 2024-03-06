@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language to Word</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #009688;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #004d40;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .container {
+            border: 2px solid #009688;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        #cimg {
+            border: 5px solid #009688;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .aside {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        #fontC {
+            font-size: 19px;
+            margin-top: 12px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        #fontC p {
+            margin-bottom: 20px;
+        }
+
+        #fontC h1 {
+            font-size: 36px;
+            color: #009688;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            #cimg {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="#">Sign Language to Word</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img id="cimg" src="{{ url_for('video_feed') }}" alt="Sign Language Video Feed">
+        <div class="aside">
+            <div id="fontC">
+                <p>Translate sign language gestures into words with our Sign Language to Word translator. Simply record your sign language gestures, and our application will convert them into text or speech. The model utilizes MobileNet and KNN classifier for accurate gesture classification.</p>
+                <div>
+                    <p>Detected Word:</p>
+                    <h1>{{ detected_word }}</h1>
+                </div>
+                <p>Our Sign Language to Word project aims to enhance communication for hearing-impaired individuals. Using computer vision and machine learning, it interprets sign language captured by a camera and converts it into spoken or written language. This technology fosters inclusivity and accessibility for the deaf and hard of hearing community.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

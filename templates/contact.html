@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+            margin: 0;
+            background-color: #e3ffe7;
+            color: #333;
+        }
+
+        .imglogo {
+            max-width: 40%;
+        }
+
+        .header {
+            padding: 40px;
+            text-align: center;
+            background-image: url("images/leaves1.jpg");
+            font-size: 3em;
+            color: white;
+        }
+
+        .container {
+            margin: 60px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+            font-size: 2em;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: darkgreen;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .header,
+            .footer,
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <div class="imglogo">
+                    <img src="bvp.png" alt="">
+                </div>
+                <span class="ml-3 font-bold text-2xl">BVP</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-2xl justify-center">   
+                <a href="about" class="mr-5 hover:text-gray-900">About-Us</a>
+                <a href="contact" class="mr-5 hover:text-gray-900">Contact</a>
+                <a href="services" class="mr-5 hover:text-gray-900">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <header class="text-gray-700 body-font">
+        <div class="header">
+            <h1>OUR TEAM</h1>
+        </div>
+    </header>
+
+    <section class="text-gray-700 body-font relative">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Astel</td>
+                        <td>Dmello</td>
+                        <td>
+                            asteldmello123@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Glen</td>
+                        <td>Gonsalvis</td>
+                        <td>glengonsalvis2005@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>cliff</td>
+                        <td>machado</td>
+                        <td>cliffmachado@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Nash</td>
+                        <td>Menezes</td>
+                        <td>nash123@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Feel free to ask any kind of query. Our team members are always available to help.</p>
+        </div>
+    </section>
+</body>
+
+</html>
